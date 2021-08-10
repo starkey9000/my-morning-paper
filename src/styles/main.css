@@ -1,0 +1,24 @@
+.page-grid{
+  display: grid;
+  grid-template-areas: "header"
+                       "main"
+                       "footer";
+}
+
+#header{
+  grid-area: "header";
+  height: 50px;
+  background-color: aqua;
+}
+
+#main{
+  grid-area: "main";
+  height: 600px;
+  background-color: cornflowerblue;
+}
+
+#footer{
+  grid-area: "footer";
+  height: 60px;
+  background-color: blue;
+}

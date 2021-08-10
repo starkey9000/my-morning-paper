@@ -1,15 +1,20 @@
+import React from 'react';
+import PageGrid from './components/PageGrid';
+
 function App() {
   return (
     <div className="App">
-      <header>
+      <PageGrid>
+        <header id="header">
 
-      </header>
-      <main>
+        </header>
+        <main id="main">
 
-      </main>
-      <footer>
-        
-      </footer>
+        </main>
+        <footer id="footer">
+
+        </footer>
+      </PageGrid>
     </div>
   );
 }
