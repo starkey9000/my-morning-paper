@@ -1,24 +1,75 @@
 .page-grid{
   display: grid;
-  grid-template-areas: "header"
-                       "main"
-                       "footer";
+  height: 100vh;
+  grid-template-columns: 50px 1fr;
+  grid-template-areas: "header main";
 }
 
 #header{
-  grid-area: "header";
-  height: 50px;
+  grid-area: header;
+  height: 100vh;
   background-color: aqua;
 }
 
 #main{
-  grid-area: "main";
-  height: 600px;
-  background-color: cornflowerblue;
+  grid-area: main;
+  height: 100vh;
+  background-color: white;
 }
 
-#footer{
-  grid-area: "footer";
-  height: 60px;
-  background-color: blue;
+#main-section-grid{
+  display: grid;
+  height: 100%;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+}
+
+.grid-square{
+  background: darkgoldenrod;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-square.three_two {
+  grid-row: span 3;
+  grid-column: span 2;
+}
+
+.grid-square.two{
+  grid-row: span 1;
+  grid-column: span 3;
+}
+
+.grid-square.three{
+  grid-row: span 4;
+  grid-column: span 3;
+}
+
+.grid-square.four{
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.grid-square.five{
+  grid-row: span 1;
+  grid-column: span 5;
+}
+
+
+/***************/
+
+.date-time p{
+  margin: 0;
+}
+.day{
+  font-size: 4rem;
+  letter-spacing: .5rem;
+}
+.date{
+  font-size: 4rem;
+}
+.time{
+  font-size: 4rem;
 }
